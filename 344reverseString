@@ -1,0 +1,16 @@
+class Solution {
+    public void reverseString(char[] s) {
+        
+        int prviPointer = 0;
+        int drugiPointer = s.length-1;
+
+        while(prviPointer < drugiPointer) {
+            char temp = s[prviPointer];
+            s[prviPointer] = s[drugiPointer];
+            s[drugiPointer] = temp;
+
+            prviPointer++;
+            drugiPointer--;
+        }
+    }
+}
